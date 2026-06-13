@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-高清剧集大全</title>
+  <meta name="description" content="搜索国产电视剧、最新电影、高清影视内容，快速进入详情与播放页面。">
+  <meta name="keywords" content="国产电视剧高清全集免费播放_最新电影在线看,国产,视频,免费,在线观看,高清,影视大全">
+  <link rel="stylesheet" href="./assets/vendor.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-shell">
+    <a class="site-logo" href="./index.html" aria-label="高清剧集大全">
+      <span class="logo-mark">▶</span>
+      <span class="logo-text">
+        <strong>高清剧集大全</strong>
+        <small>国产电视剧视频免费在线观看</small>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+        <a href="./category/domestic-series.html">国产热播</a>
+        <a href="./category/latest-movies.html">最新电影</a>
+        <a href="./category/romance-drama.html">爱情剧情</a>
+        <a href="./category/suspense-crime.html">悬疑犯罪</a>
+        <a href="./category/comedy-family.html">喜剧家庭</a>
+        <a href="./category/sci-fi-fantasy.html">科幻奇幻</a>
+    </div>
+    <form class="nav-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="nav-toggle" type="button" aria-label="展开导航">☰</button>
+  </nav>
+  <div class="mobile-menu">
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="mobile-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./category/domestic-series.html">国产热播</a>
+      <a href="./category/latest-movies.html">最新电影</a>
+      <a href="./category/romance-drama.html">爱情剧情</a>
+      <a href="./category/suspense-crime.html">悬疑犯罪</a>
+      <a href="./category/comedy-family.html">喜剧家庭</a>
+      <a href="./category/sci-fi-fantasy.html">科幻奇幻</a>
+      <a href="./category/horror-thriller.html">恐怖惊悚</a>
+      <a href="./category/action-adventure.html">动作冒险</a>
+      <a href="./category/classic-cinema.html">经典佳片</a>
+      <a href="./category/overseas-screen.html">海外剧场</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="page-title">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>搜索</span></div>
+    <h1>影片搜索</h1>
+    <p>输入影片名称、地区、类型、年份或标签，快速查找可在线观看的影视内容。</p>
+  </div>
+</section>
+<div class="content-shell compact-top">
+  <form class="search-panel" action="search.html" method="get">
+    <input data-search-input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+    <button type="submit">搜索</button>
+  </form>
+  <p class="search-message" data-search-message>热门片单</p>
+  <div class="grid-posters" data-search-results></div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="site-logo" href="./index.html">
+        <span class="logo-mark">▶</span>
+        <span class="logo-text">
+          <strong>高清剧集大全</strong>
+          <small>国产电视剧视频免费在线观看</small>
+        </span>
+      </a>
+      <p>提供国产电视剧高清全集免费播放，同时可在线观看最新电影。本站资源以国产内容为核心，更新迅速，播放稳定。</p>
+    </div>
+    <div>
+      <h3>分类导航</h3>
+      <ul>
+          <li><a href="./category/domestic-series.html">国产热播</a></li>
+          <li><a href="./category/latest-movies.html">最新电影</a></li>
+          <li><a href="./category/romance-drama.html">爱情剧情</a></li>
+          <li><a href="./category/suspense-crime.html">悬疑犯罪</a></li>
+          <li><a href="./category/comedy-family.html">喜剧家庭</a></li>
+          <li><a href="./category/sci-fi-fantasy.html">科幻奇幻</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>热门入口</h3>
+      <ul>
+        <li><a href="./categories.html">全部分类</a></li>
+        <li><a href="./ranking.html">热播排行</a></li>
+        <li><a href="./search.html">影片搜索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高清剧集大全</div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
